@@ -130,7 +130,7 @@ if (! extension_loaded('mssql') && extension_loaded('pdo_sqlsrv')) {
 	}
 
 	function mssql_free_result($result) {
-		return $stmt->closeCursor();
+		return $result->closeCursor();
 	}
 
 	function mssql_free_statement($stmt) {
